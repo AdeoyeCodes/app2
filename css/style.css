@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+@keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
+  @keyframes zoomOut {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  
+  .img-zoom { 
+    height: auto;
+    transition: transform 0.5s ease;
+  
+    
+    &:hover {
+      animation: zoomIn 1s forwards;
+    }
+  
+    
+    &:not(:hover) {
+      animation: zoomOut 1s forwards;
+    }
+  }
+  
+
+
+  
+
+.sec {
+    background-color: whitesmoke;
+}
+.div2 {
+    background-color: whitesmoke;
+}
+.div3 {
+    background-color: deeppink;
+}
+.div4 {
+    background-color: #cc0066;
+    margin-top: -2.5vh;
+    padding-top: 1.1vh;
+    
+}
+.div5 {
+    background-color: white;
+    margin-top: -10px;
+}
+.container {
+    background-color: white;
+    margin-left: 4vh;
+    margin-right: 6vh;
+    padding-bottom: 30vh;
+}
+.paydiv {
+    margin-top: 20vh;
+    margin-left: 13dvh;
+    width: 50%;
+}
+ul {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: -5vh;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5vh;
+    margin-top: 11px;
+    padding-bottom: 12px;
+    padding-top: -5px;
+    line-height: 8px;
+}
+.btn-info {
+    background-color: #4d8eb0;;
+    color: #fff;
+}
+ul a {
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    
+}
+.ul2 {
+    margin-left: 5vh; 
+}
+.li2 {
+    margin-right: 9.3vh;
+}
+.ul3 {
+    margin-left: 3vh;
+    color: black;
+    
+    font-size: 12px;
+}
+footer {
+    padding-bottom: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  black;
+    border-top: 2px solid #f0f0f0;
+    padding-bottom: 11px;
+    margin-bottom: 0px;
+    margin-left: -75dvh;
+    padding-top: 26px;
+}
+
+@media (max-width: 992px) {
+    .div3 ul {
+        margin-left: -10dvh;
+    }   
+    .div3li6 {
+        margin-left: 49dvh;
+    }
+    .searchli {
+        width: 5.8%;
+    }
+}
+
+@media (max-width: 768px) {
+    .k250 {
+        font-size: 15px;
+        margin-left: -22dvh;
+    }
+    .btndiv {
+        margin-left: -20dvh;
+    }
+}
+
+@media (max-width: 600px) {
+    .imagediv {
+        margin-left: -17dvh;
+        margin-top: -12dvh;
+        width: 93%;
+    }
+    .btndiv {
+        margin-top: -24dvh;
+        margin-left: -45dvh;
+    }
+}
